@@ -38,15 +38,17 @@ npm run dev
 
 ## 🧪 Scripts disponibles
 
-|       Script         |               Description              |
-|----------------------|----------------------------------------|
-| `npm run dev`        | Démarre l’app en développement (Vite)  |
-| `npm run lint`       | Analyse le code avec ESLint            |
-| `npm run format`     | Formate le code avec Prettier          |
-| `npm run test`       | Lance les tests Playwright             |
-| `npm run dev-test`   | Exécute à la fois `dev` et `test`      |
-| `npm run check`      | Exécute à la fois `lint` et `dev-test` |
-| `npm run prepare`    | Initialise Husky (post-install)        |
+|       Script         |                    Description                     |
+|----------------------|----------------------------------------------------|
+| `npm run dev`        | Démarre l’app en développement (Vite)              |
+| `npm run lint`       | Analyse le code avec ESLint                        |
+| `npm run format`     | Formate le code avec Prettier                      |
+| `npm run test`       | Lance les tests Playwright                         |
+| `npm run dev-test`   | Exécute à la fois `dev` et `test`                  |
+| `npm run check`      | Exécute à la fois `lint` et `dev-test`             |
+| `npm run prepare`    | Initialise Husky (post-install)                    |
+| `npm run jest`	   | Lance tes tests unitaires avec Jest                |
+| `npm run coverage`   | Génère coverage/lcov.info (jest) pour SonarCloud   |
 
 ## 🧱 Qualité logicielle et CI
 

@@ -30,6 +30,9 @@ jobs:
 
       - name: Tests end-to-end Playwright
         run: npm run dev-test
+      
+      - name: Générer la couverture Jest
+        run: npm run coverage
 
   sonarcloud:
     name: Analyse SonarCloud

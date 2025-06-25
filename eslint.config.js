@@ -12,6 +12,7 @@ export default defineConfig([
       js.configs.recommended,
       reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
+      'eslint-config-prettier', // désactive les règles en conflit avec Prettier
     ],
     languageOptions: {
       ecmaVersion: 2020,

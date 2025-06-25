@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [inutile, setInutile] = useState([]);
 
   useEffect(() => {
     fetch('/api/products')

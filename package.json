@@ -9,8 +9,9 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "test": "npx start-server-and-test 'npm run dev' http://localhost:5173 'npx playwright test'",
-    "check": "npm run lint && npm run test",
+    "test": "npx playwright test",
+    "dev-test": "npx start-server-and-test 'npm run dev' http://localhost:5173 'npm run test'",
+    "check": "npm run lint && npm run dev-test",
     "preview": "vite preview"
   },
   "dependencies": {

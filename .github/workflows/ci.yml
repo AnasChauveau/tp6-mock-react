@@ -29,4 +29,4 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Tests end-to-end Playwright
-        run: npm run test
+        run: npm run dev-test

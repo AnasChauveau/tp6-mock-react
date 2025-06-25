@@ -10,7 +10,7 @@ function App() {
       .then(setProducts);
   }, []);
 
-  return (
+  return ( 
     <><h1>Catalogue produits</h1>
       <ul>
         {products.map(p => (

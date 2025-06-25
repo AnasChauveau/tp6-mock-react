@@ -69,6 +69,8 @@ tp6-mock-react/
 │   ├── App.jsx
 │   ├── main.jsx
 │   ├── utils/
+│   │   ├── _tests_/
+│   │   │   └── products.spec.js
 │   │   └── generateProducts.js
 │   └── mocks/
 │       ├── handlers.js
@@ -81,7 +83,11 @@ tp6-mock-react/
 ├── .husky/
 │   └── pre-commit
 ├── eslint.config.js
+├── babel.config.cjs
+├── jest.config.cjs
+├── playwright.config.js
 ├── .prettierrc
+├── sonar-project.properties
 ├── README.md
 ```
 

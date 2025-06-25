@@ -1,4 +1,5 @@
 ![CI](https://github.com/AnasChauveau/tp6-mock-react/actions/workflows/ci.yml/badge.svg)
+![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=AnasChauveau_tp6-mock-react&metric=alert_status)
 
 # 🛍️ Catalogue de Produits – React
 

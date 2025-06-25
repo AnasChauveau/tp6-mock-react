@@ -1,12 +1,88 @@
-# React + Vite
+![CI](https://github.com/AnasChauveau/tp6-mock-react/actions/workflows/ci.yml/badge.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛍️ Catalogue de Produits – React
 
-Currently, two official plugins are available:
+## 🎯 Objectif du projet
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cette application React simule un catalogue de produits, générés dynamiquement à l’aide de [Faker.js](https://github.com/faker-js/faker) et fournis via une API mockée grâce à [MSW (Mock Service Worker)](https://mswjs.io/).
 
-## Expanding the ESLint configuration
+L’objectif est de mettre en place un projet frontend fiable et industrialisé, intégrant :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Génération de données réalistes avec Faker.js
+- ✅ Simulation d’API avec MSW
+- ✅ Tests de bout en bout avec Playwright
+- ✅ Linter ESLint et formateur Prettier
+- ✅ Intégration continue via GitHub Actions
+- ✅ Hooks Git `pre-commit` avec Husky
+
+## 🚀 Lancer l’application
+
+### Pré-requis
+
+- Node.js 18 ou supérieur
+- npm
+
+### Installation
+
+```bash
+npm install
+npm run prepare
+```
+
+### Lancer le serveur de développement
+
+```bash
+npm run dev
+```
+
+## 🧪 Scripts disponibles
+
+|       Script         |               Description              |
+|----------------------|----------------------------------------|
+| `npm run dev`        | Démarre l’app en développement (Vite)  |
+| `npm run lint`       | Analyse le code avec ESLint            |
+| `npm run format`     | Formate le code avec Prettier          |
+| `npm run test`       | Lance les tests Playwright             |
+| `npm run dev-test`   | Exécute à la fois `dev` et `test`      |
+| `npm run check`      | Exécute à la fois `lint` et `dev-test` |
+| `npm run prepare`    | Initialise Husky (post-install)        |
+
+## 🧱 Qualité logicielle et CI
+
+- **ESLint** : Configuration via `eslint.config.js` en flat config
+- **Prettier** : Formatage automatique selon `.prettierrc`
+- **Husky** : Hook `pre-commit` pour lancer `lint` + `dev-test` à chaque commit
+- **GitHub Actions** : Workflow CI complet (`.github/workflows/ci.yml`) pour exécuter linter + tests automatiquement à chaque push ou pull request
+
+## 🧩 Structure du projet
+
+```
+tp6-mock-react/
+├── public/
+│   ├── mockServiceWorker.js
+│   └── vite.svg
+├── src/
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── utils/
+│   │   └── generateProducts.js
+│   └── mocks/
+│       ├── handlers.js
+│       └── browser.js
+├── tests/
+│   └── products.spec.js
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── .husky/
+│   └── pre-commit
+├── eslint.config.js
+├── .prettierrc
+├── README.md
+```
+
+## 👤 Auteur
+
+Anas CHAUVEAU  
+📍 MyDigitalSchool Grenoble  
+📅 Année 2025
